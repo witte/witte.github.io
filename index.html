@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Yuri Witte">
+        <meta name="description" content="Yuri Witte personal website.">
+        <meta name="keywords" content="witte, yuri witte, audio, open source, linux">
+        <link rel="stylesheet" href="css/layout.css">
+        <title>Yuri Witte</title>
+    </head>
+    <body>
+        <div class="header">
+            <div>
+                <nobr><b>Yuri Witte</b></nobr>
+            </div>
+            <div>
+                <a class="nav-item" href="#about">about</a>&nbsp;|&nbsp;
+                <a class="nav-item" href="#software">software</a>&nbsp;|&nbsp;
+                <a class="nav-item" href="#audio">audio</a>
+            </div>
+            <div>
+                <a class="nav-contact" href="https://medium.com/@witte" target="_blank"><img src="img/medium.png" alt="medium" width="20"></a>
+                <a class="nav-contact" href="https://masto.io/@witte" target="_blank"><img src="img/mastodon.png" alt="mastodon" width="20"></a>
+                <a class="nav-contact" href="https://soundcloud.com/yuri-witte" target="_blank"><img src="img/soundcloud.png" alt="soundcloud" width="26"></a>
+                <a class="nav-contact" href="https://github.com/witte" target="_blank"><img src="img/github.png" alt="github" width="20"></a>
+            </div>
+        </div>
+        <div class="container">
+            <main>
+                <section id="about">
+                    <h2><a class="nav-item" href="#">About</a></h2>
+                    <p>I have been working as a composer and sound designer since 2007, collaborating with companies from different countries making music and sound design for games, videos and events.</p>
+                    <p>I have always been interested in technology, started programming at 14 and have worked as a software developer for about 4 years before going to college for music at <a href="http://udesc.br/" target="_blank">Universidade do Estado de Santa Catarina</a>. In the last years I have been getting more and more interested in the development of music related applications. That has led me to research and study many of the free/open source software available today as well as the <a href="https://www.qt.io/" target="_blank">Qt framework</a>, and now I am working on a couple ideas of my own that could hopefully also be a meaningful contribution to the ecosystem.</p>
+                    <p>This website is basically a hub linking to my production related to the interest in both music and software.</p>
+                </section>
+                <section id="software">
+                    <h2><a class="nav-item" href="#">Software</a></h2>
+                    <ul id="software-list">
+                        <li id="pomodoro">
+                            <h3><i>Pomodoro</i></h3>
+                            <p>There's a Dial component in <a href="https://en.wikipedia.org/wiki/QML" target="_blank">QML</a> that is almost what a pan knob in a <a href="https://en.wikipedia.org/wiki/Digital_audio_workstation" target="_blank">DAW</a> should be. I couldn't find any other one to fulfill this function and wanted to understand a little better how the C++ side of the QML components work, so I made this little app which is kind of an excuse for the "Pie" and "PieSlice" components to be used. I don't really know if the Pomodoro technique improves my productivity, but it sure reminds me of not staying in front of the computer for 2 hours straight.</p>
+                            <p class="github-link">
+                                <a href="https://github.com/witte/Pomodoro" target="_blank">
+                                    <img src="img/pomodoro-screenshot.png" width="320" alt="Pomodoro screenshot" class="screenshot"><br>
+                                    https://github.com/witte/Pomodoro
+                                </a>
+                            </p>
+                        </li>
+                        <li id="mixr">
+                            <h3><i>Mixr</i></h3>
+                            <p>My first attempt at writing a Qt/QML based application. After using many of the <a href="http://jackaudio.org/" target="_blank">JACK</a> patchbay apps I thought that, in all of them, the process of connecting the audio/midi inputs/outpus between applications was slow and tedious, and could be improved if we had automated ways of doing so. <b>Mixr</b> would be an attempt at that, but then I thought about doing something a little more complex (see <a href="#polvo">Polvo</a>).</p>
+                            <p class="github-link">
+                                <a href="https://github.com/witte/Mixr" target="_blank">
+                                    <img src="img/mixr-screenshot.png" width="640" alt="Mixr screenshot" class="screenshot"><br>
+                                    https://github.com/witte/Mixr
+                                </a>
+                            </p>
+                        </li>
+                        <li id="polvo">
+                            <h3><i>Polvo</i></h3>
+                            <p>While working on <a href="#mixr">Mixr</a> I watched <a href="https://www.youtube.com/watch?v=dk2AMwc4e2k" target="_blank">Paul Davis presentation at Linux Audio Conference 2017</a> (the whole presentation is well worth the time). At <a href="https://youtu.be/dk2AMwc4e2k?t=3191" target="_blank">53:15</a> he mentions that "browsers are becoming closer and closer to the sort of virtual machine/platform agnostic run time environment dreamed of by the inventors of Java", arguing that by having web frontends for "native" engines we could have more designers/developers contributing to projects, even though web frontends couldn't work yet as a direct desktop replacement.</p>
+                            <p>In my opinion QML can be that replacement. It can be as friendly as HTML/javascript for frontend developers, while its components can still benefit from having their logic implemented in C++.</p>
+                            <p><b>Polvo</b> is meant to be a QML based app that provides an easier way for frontend designers/developers to 'talk to' native audio applications through <a href="https://en.wikipedia.org/wiki/Open_Sound_Control" target="_blank">OSC</a>.</p>
+                            <p class="github-link">
+                                <i>it's ugly at the moment, I know, I know</i><br>
+                                <a href="https://github.com/witte/Polvo" target="_blank">
+                                    <img src="img/polvo-screenshot.png" width="480" alt="Mixr screenshot" class="screenshot"><br>
+                                    https://github.com/witte/Polvo
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="audio">
+                    <h2><a class="nav-item" href="#">Audio</a></h2>
+                    <p>Here's some of the music I have composed, there's more on my <a href="https://soundcloud.com/yuri-witte" target="_blank" >SoundCloud</a> account.</p>
+                    <ul class="audio-links">
+                        <li><iframe class="youtube" src="https://www.youtube.com/embed/35gTl_Cgt-o" frameborder="0" allowfullscreen></iframe></li>
+                        <li><iframe class="soundcloud" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/185019861&amp;auto_play=false&amp;visual=true&amp;sharing=false&amp;show_user=false"></iframe></li>
+                        <li><iframe class="soundcloud" class="soundcloud" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/205791005&amp;auto_play=false&amp;visual=true&amp;sharing=false&amp;show_user=false"></iframe></li>
+                        <li><iframe class="soundcloud" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219981882&amp;auto_play=false&amp;visual=true&amp;sharing=false&amp;show_user=false"></iframe></li>
+                        <li><iframe class="soundcloud" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209730131&amp;auto_play=false&amp;visual=true&amp;sharing=false&amp;show_user=false"></iframe></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <div class="footer">Yuri Witte - &copy; 2017. - witte [at] tuta [dot] io</div>
+    </body>
+</html>
