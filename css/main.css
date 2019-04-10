@@ -101,7 +101,7 @@ img.screenshot
         box-shadow: 0 0 10px #888888;
 }
 
-@media all and (min-width: 760px)
+@media all and (min-width: 880px)
 {
         .header
         {
