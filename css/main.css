@@ -33,7 +33,7 @@ a:active
 .header
 {
         color: #fefffe;
-        background-image: linear-gradient(to bottom, rgba(42, 118, 75, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(29, 77, 49, 0.2) 100%), url(../img/bg.png);
+        background-image: linear-gradient(to bottom, rgba(42, 118, 75, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(29, 77, 49, 0.2) 100%), url(../img/pcb.png);
         border-top: #2a744a 1px solid;
         border-bottom: #225d3c 1px solid;
     
@@ -59,8 +59,6 @@ a:active
         display: flex;
         align-items: center;
         justify-content: center;
-    
-/*        margin: 0 28px;*/
 }
 .header > DIV:first-child
 {
@@ -114,7 +112,17 @@ img.screenshot
         {
                 width: 24%;
         }
+        
+        .header > DIV:first-child
+        {
+                justify-content: right
+        }
 
+        .header > DIV:last-child
+        {
+                justify-content: left
+        }
+        
         main
         {
                 width: 62%;
