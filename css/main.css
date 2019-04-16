@@ -115,12 +115,12 @@ img.screenshot
         
         .header > DIV:first-child
         {
-                justify-content: right
+                justify-content: flex-end
         }
 
         .header > DIV:last-child
         {
-                justify-content: left
+                justify-content: flex-start
         }
         
         main
