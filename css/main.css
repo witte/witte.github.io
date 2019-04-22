@@ -2,10 +2,11 @@ body
 {
         -webkit-text-size-adjust: 100%;
         margin: 0;
-        background-color: #fdfdfd;
+        /*background-color: #fdfdfd;*/
+        background: url(../img/plaid.png) repeat;
 
         font-family: sans-serif;
-        color: #666666;
+        color: #222;
 }
 img
 {
@@ -64,7 +65,7 @@ a:active
 .header > DIV:first-child
 {
         font-size: 2em;
-        color: rgb(238, 238, 238);
+/*         color: rgb(238, 238, 238); */
 }
 
 .container
@@ -89,7 +90,7 @@ section
 h2 > a
 {
         text-decoration: none;
-        color: #434343;
+        color: #222;
 }
 p.github-link
 {
